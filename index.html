@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey-Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="title">
+        Survey-form
+      </h1>
+      <p id="description">
+        Are you ready to begin your journey?
+      </p>
+      <form action="" id="survey-form">
+        <div class="form-control">
+          <label for="name" id="label-name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-control">
+          <label for="email" id="label-email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="id" id="label-id">ID</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your ID"
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="status" id="label-status">Your current status</label>
+          <select name="status" id="status">
+            <option value="student">Student</option>
+            <option value="wjob">Without a job</option>
+            <option value="ptjob">Part-time job</option>
+            <option value="ftjob">Full-time job</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="">Are you ready to learn ?</label>
+
+          <label for="yes">
+            <input type="radio" id="Yes" name="yn" />Yes
+          </label>
+
+          <label for="no"> <input type="radio" id="No" name="yn" />No </label>
+        </div>
+
+        <div class="form-control">
+          <label for="">Which Technologies are you going to learn ?</label>
+
+          <label for="technologie1">
+            <input
+              type="checkbox"
+              id="technologie1"
+              name="technologies"
+            />HTML/CSS
+          </label>
+          <label for="technologie2">
+            <input
+              type="checkbox"
+              id="technologie2"
+              name="technologies"
+            />JavaScript
+          </label>
+          <label for="technologie3">
+            <input
+              type="checkbox"
+              id="technologie3"
+              name="technologies"
+            />SASS/LESS
+          </label>
+          <label for="technologie4">
+            <input
+              type="checkbox"
+              id="technologie4"
+              name="technologies"
+            />Angular
+          </label>
+          <label for="technologie5">
+            <input type="checkbox" id="technologie5" name="technologies" />Vue
+          </label>
+          <label for="technologie6">
+            <input type="checkbox" id="technologie6" name="technologies" />React
+          </label>
+          <label for="technologie7">
+            <input
+              type="checkbox"
+              id="technologie7"
+              name="technologies"
+            />TypeScript
+          </label>
+          <label for="technologie8">
+            <input
+              type="checkbox"
+              id="technologie8"
+              name="technologies"
+            />Bootstrap
+          </label>
+          <label for="technologie9">
+            <input type="checkbox" id="technologie9" name="technologies" />Redux
+          </label>
+          <label for="technologie10">
+            <input
+              type="checkbox"
+              id="technologie10"
+              name="technologies"
+            />Other/Etc.
+          </label>
+        </div>
+
+        <div class="form-control">
+          <label for="Comments">Any comments ?</label>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-control">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
